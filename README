@@ -1,0 +1,8 @@
+Pretty simple:
+
+* open index.html to run the application.
+* open test.html to run the tests.
+* run makecoffee to recompile the whole project and tests.
+
+Copyright (R) Leandro Ostera Villalva
+Acknowledgments to Fernando Lujan for the LESS/CSS.

@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+  <!-- Meta-data -->
+  <meta charset="utf-8">  
+  <title>What's Next!?</title>
+
+  <!-- Head JS / Require JS -->
+  <!--<script src="lib/head.min.js"></script>-->
+
+  <!-- LESS/CSS -->
+  <link rel="stylesheet/less" href="less/bootstrap/bootstrap.less">
+  <link rel="stylesheet/less" href="less/layout.less">
+
+  
+  <script src="js/libs/head/load.js"></script>
+  <script src="js/libs/require/require.js"></script>
+  <script>
+    // load the scripts you need
+    head.js(
+        "js/libs/jquery/jquery.min.js",
+        "js/libs/less/less.min.js",
+        "js/libs/underscore/underscore.min.js",
+        "js/libs/backbone/backbone.min.js",
+        "js/libs/backbone/backbone.tastypie.min.js",
+        "js/libs/require/require.js"
+    );  
+    </script>
+
+  <body>
+  <script>
+    head.ready(
+      function() {
+        require(
+          ["js/main"]
+        )        
+      }
+    );
+  </script>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+/**
+ * Author(s): V. Fernando Lujan
+ ******
+ * Notes:
+ ******
+ * Enjoy some already-made mix-ins for your layout needs, brutha!
+ *****/
+
+/******
+ * Fonts
+ */
+//@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,300,600'); // Open Sans
+
+/******
+ * Functions/Mixins
+ */
+.border-radius(@_radius : 4px) {
+	-moz-border-radius: @_radius; // Firefox
+	-webkit-border-radius: @_radius; // Safari + Chrome
+	-khtml-border-radius: @_radius; // Linux
+	border-radius: @_radius; // CSS3 (for the wolf)
+	behavior: url('_/border-radius.htc'); // IE
+}
+
+// Drop shadow
+.box-shadow(@_distx : 3px, @_disty : 3px, @_size : 3px, @_spread : 3px, @_color : #000) {
+	-moz-box-shadow: @arguments; // Firefox
+	-webkit-box-shadow: @arguments; // Safari + Chrome
+	-khtml-box-shadow: @arguments; // Linux
+	box-shadow: @arguments; // CSS3 (for the wolf)
+}
+
+// Inner shadow
+.box-shadow-inset(@_distx : 3px, @_disty : 3px, @_size : 3px, @_spread : 0, @_color : #000) {
+	-moz-box-shadow: inset @arguments; // I think you get the point by know
+	-webkit-box-shadow: inset @arguments;
+	-khtml-box-shadow: inset @arguments;
+	box-shadow: inset @arguments;
+}
+
+.element-opacity(@_opacity: 1.0) {
+	filter: ~"alpha(opacity=(@_opacity * 100))"; // IE filter evaluates this value from 0-100 rather than 0-1, so we multiply by 100
+	-khtml-opacity: @_opacity;
+	-moz-opacity: @_opacity;
+	opacity: @_opacity;
+}
+
+/******
+ * Site-wide
+ */
+.app-header{
+	p {
+		margin-top: 15px;
+	}
+}
+
+.delete {
+  display: block;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background: url("img/destroy.png") no-repeat 0 0;
+}
+
+.delete:hover {
+  background-position: 0 -20px;
+}

@@ -1,8 +1,12 @@
-Pretty simple:
+Check it out!
 
 * open index.html to run the application.
 * open test.html to run the tests.
-* run makecoffee to recompile the whole project and tests.
 
-Copyright (R) Leandro Ostera Villalva
-Acknowledgments to Fernando Lujan for the LESS/CSS.
+Use it!
+* make sure you can access the coffee compiler from your command line directly
+* just run expresso.py and happily code everafter
+
+It might not be the brightest solution but it works.
+
+Acknowledgments to Fernando Lujan for the LESS/CSS integration.

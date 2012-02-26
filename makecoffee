@@ -1,6 +1,0 @@
-#! /usr/bin/sh
-coffee -o js/collections -c coffee/collections/*
-coffee -o js/models -c coffee/models/*
-coffee -o js/views -c coffee/views/*
-coffee -o js -c coffee/*.coffee
-coffee --join specs.js -o js/tests -c coffee/specs/*

@@ -2,10 +2,10 @@ import subprocess
 
 class ExpressoMachine:  
     cmd = []
+    shell = True
 
     def order(self):
-        subprocess.Popen(self.cmd,shell=True)
-
+        subprocess.Popen(self.cmd,shell=self.shell)
 
 
 if __name__ == "__main__":    

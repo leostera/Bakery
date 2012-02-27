@@ -1,13 +1,23 @@
-Check it out!
+## Bakery
 
-* open index.html to run the application.
-* open test.html to run the tests.
+A simple boilerplate for:
+* CoffeeScript
+* Backbone
+* jQuery
+* Jasmine and Sinon
+* Less and Bootstrap
 
-Use it!
+### Check it out!
 
-* make sure you can access the coffee compiler from your command line directly
-* just run expresso.py and happily code everafter
+* Open index.html to run the application.
+* Open test.html to run the tests.
+
+### Use it!
+
+* Make sure you can access the coffee compiler from your command line directly
+* Just run expresso.py and happily code everafter
 
 It might not be the brightest solution but it works.
 
-Acknowledgments to Fernando Lujan for the LESS/CSS integration.
+## Acknowledgments to
+* Fernando Lujan, for the LESS/CSS integration.

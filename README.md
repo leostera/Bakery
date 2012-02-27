@@ -1,6 +1,7 @@
 ## Bakery
 
 A simple boilerplate for:
+
 * CoffeeScript
 * Backbone
 * jQuery

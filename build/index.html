@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+  <!-- Meta-data -->
+  <meta charset="utf-8">  
+  <title>What's Next!?</title>
+
+  <!-- LESS/CSS -->
+  <link rel="stylesheet/less" href="less/bootstrap.less">
+  <script src="js/libs/less/less.min.js"></script>  
+
+  <script src="js/libs/jquery/jquery.min.js"></script>
+  <script src="js/libs/underscore/underscore.min.js"></script>
+  <script src="js/libs/backbone/backbone.min.js"></script>
+  <script src="js/libs/backbone/backbone.localStorage.min.js"></script>
+  <script src="js/libs/require/require.js"></script>
+
+  <script>
+
+  window.App = {}
+
+  require.config({
+    baseUrl: "js/",
+    paths: {
+      text: "libs/require/text",
+      templates: "../templates",
+    }
+  });
+
+  require( ["Main"] , function(){
+    ;
+  })
+
+  </script>
+
+</head>
+
+  <body><br/>
+       
+    <div id="list" class="well" style="width: 23%; margin: 0 auto;">      
+    </div>
+  </body>
+
+</html>

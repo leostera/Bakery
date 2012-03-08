@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="pragma" content="no-cache">
+
+  <title>Jasmine Spec Runner</title>
+
+  <link rel="stylesheet" type="text/css" href="css/jasmine.css">
+
+  <!-- This are scrips to be loaded from the build folders -->
+  
+  <script src="../build/js/libs/jquery/jquery.min.js"></script>
+  <script src="../build/js/libs/underscore/underscore.min.js"></script>
+  <script src="../build/js/libs/backbone/backbone.min.js"></script>
+  <script src="../build/js/libs/backbone/backbone.localStorage.min.js"></script>
+  <!--  
+  <script src="../build/js/libs/backbone/backbone.validation.min.js"></script>  
+  -->
+  <script src="js/libs/jasmine/sinon.js"></script>
+  <script src="js/libs/jasmine/jasmine.js"></script>
+  <script src="js/libs/jasmine/jasmine-html.js"></script>
+  <script src="js/libs/jasmine/jasmine-jquery.js"></script>
+  <script src="js/libs/jasmine/jasmine-sinon.js"></script>
+
+  <script src="../build/js/libs/require/require.js"></script>
+  
+  <body>
+
+  <script>
+  $(document).ready( function() {
+
+      window.App = {}
+    // and when all the specs are loaded, use require js to start the specrunner
+      require.config({
+        // this is the relative path from this index.html file to the js folder
+        // from the build/release folder
+        baseUrl: '../build/js',
+        // define any custom paths here
+        paths: {
+          text: 'libs/require/text',
+          specs: '../../specs/js'
+        }
+      });
+
+      require([
+        'specs/utils/SpecRunner',
+        ],           
+        // Also, for each module required, add a parameter
+        function(SpecRunner) {
+          SpecRunner();
+        }
+      );
+
+  });
+</script>
+
+  </head>
+<body>
+  <div id="list"></div>
+</body>
+</html>

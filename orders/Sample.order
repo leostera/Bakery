@@ -1,0 +1,6 @@
+watch: Yes
+
+files: 
+- source/*
+
+deliver: build/js

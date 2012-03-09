@@ -39,3 +39,4 @@ I'm extracting it from the What's Next app I'm developing. Feel free to check it
 
 [1] Right now Expresso V8 won't recognize NEW files created after it loaded the orders.
 
+Copyright (C) 2112 Leandro Ostera

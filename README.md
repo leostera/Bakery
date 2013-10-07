@@ -1,4 +1,5 @@
-## Bakery: The tasty boilerplate for CoffeeScripters.
+# Bakery (discontinued)
+## The tasty boilerplate for CoffeeScripters.
 
 Bakery is a delicious project template that will let you focus right on your flaming CoffeeScript project using:
 
